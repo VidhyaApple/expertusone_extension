@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "ExpertusONE CONTENT MANAGER",
+  "description": "Add content to ExpertusONE",
+  "version": "1.0",
+  "icons": {
+    "128": "images/128.png",
+    "48": "images/48.png",
+    "16": "images/16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "images/16.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["eventPage.js","axios.min.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "storage",
+    "notifications",
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "http://*.exphosted.com/*"
+  ]
+
+}
